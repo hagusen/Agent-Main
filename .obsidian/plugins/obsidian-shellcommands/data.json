@@ -4,7 +4,7 @@
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
   "show_autocomplete_menu": true,
-  "working_directory": "{{folder_path:absolute}}",
+  "working_directory": "",
   "default_shells": {},
   "environment_variable_path_augmentations": {},
   "show_installation_warnings": true,
@@ -33,8 +33,58 @@
       "icon": "lucide-terminal-square",
       "shells": {},
       "platform_specific_commands": {
-        "default": "",
+        "default": "wt wsl -- bash -c \"claude --dangerously-skip-permissions\"",
         "windows": "wt wsl"
+      },
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "execution_notification_mode": "quick",
+      "events": {},
+      "debounce": null,
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": false,
+          "prompt_id": ""
+        }
+      ],
+      "variable_default_values": {}
+    },
+    {
+      "id": "run-mdflow",
+      "alias": "Run with mdflow",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_handling": "notification",
+      "output_handling_order": "stdout-first",
+      "icon": "lucide-terminal",
+      "shells": {
+        "windows": "wsl-bash",
+        "linux": "bash",
+        "darwin": "bash",
+        "win32": "wsl-bash"
+      },
+      "platform_specific_commands": {
+        "default": "md \"{{file_path:absolute}}\"",
+        "windows": "md \"$(wslpath '{{file_path:absolute}}')\""
       },
       "input_contents": {
         "stdin": null
@@ -45,7 +95,7 @@
           "convert_ansi_code": true
         },
         "stderr": {
-          "handler": "ignore",
+          "handler": "notification",
           "convert_ansi_code": true
         }
       },
@@ -63,22 +113,15 @@
       "variable_default_values": {}
     },
     {
-      "id": "run-mdflow",
-      "alias": "Run with mdflow",
+      "id": "tf2imi47bu",
+      "platform_specific_commands": {
+        "default": "wt wsl -- bash -l \"md \\\"$(wslpath '{{file_path:absolute}}')\\\"; exec bash\""
+      },
+      "shells": {},
+      "alias": "",
+      "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_handling": "notification",
-      "output_handling_order": "stdout-first",
-      "icon": "lucide-terminal",
-      "shells": {
-        "windows": "wsl-bash",
-        "linux": "bash",
-        "darwin": "bash"
-      },
-      "platform_specific_commands": {
-        "default": "md \"{{file_path:absolute}}\"",
-        "windows": "md \"$(wslpath '{{file_path:absolute}}')\""
-      },
       "input_contents": {
         "stdin": null
       },

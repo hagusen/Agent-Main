@@ -1,5 +1,5 @@
 [
-  "obsidian-shellcommands",
   "cmdr",
-  "obsidian-local-rest-api"
+  "obsidian-local-rest-api",
+  "obsidian-shellcommands"
 ]
