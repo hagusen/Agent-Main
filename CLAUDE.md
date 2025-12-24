@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Rules
+
+After completing a task that modifies files, always commit with a descriptive message
 ## Project Overview
 
 Agent-Main is a collection of example markdown templates for the `md` (mdflow) CLI tool. These templates demonstrate patterns for AI-assisted development workflows using Claude, Copilot, or Codex models. The repository is managed as an Obsidian vault.

@@ -1,0 +1,24 @@
+{
+  "settings_version": "2025-01-01",
+  "debug": false,
+  "shell_commands": {
+    "run-mdflow": {
+      "id": "run-mdflow",
+      "shell_command": "md \"{{file_path:absolute}}\"",
+      "alias": "Run with mdflow",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_handling": "notification",
+      "output_handling_order": "stdout-first",
+      "icon": "terminal",
+      "shells": {
+        "windows": "powershell",
+        "linux": "bash",
+        "darwin": "bash"
+      }
+    }
+  },
+  "working_directory": "{{folder_path:absolute}}",
+  "default_shell": "",
+  "preview_variables_in_command_palette": true
+}
