@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "hello.claude.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "hello.claude"
             }
           }
         ]
@@ -162,11 +162,16 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "cmdr:Shell commands: Execute: Run with mdflow": false
     }
   },
   "active": "622a4a8cd7669396",
   "lastOpenFiles": [
+    "MDFLOW-REFERENCE.md",
+    "README.md",
+    "CLAUDE.md",
     "hello.claude.md",
     "New folder",
     "jkjk",
@@ -177,7 +182,6 @@
     "examples/line-range.claude.md",
     "examples/interactive.i.claude.md",
     "examples/template-args.claude.md",
-    "MDFLOW-REFERENCE.md",
     "examples/command-inline.claude.md",
     "MDFLOW-REFERENCE.md.tmp.207550.1766607681620",
     "examples/args-list.claude.md",
@@ -185,8 +189,6 @@
     "examples/multi-agent/audit-legacy.claude.md",
     "examples/multi-agent/architect.claude.md",
     "examples/multi-agent/announcement.claude.md",
-    "CLAUDE.md",
-    "README.md",
     "CLAUDE.md.tmp.207550.1766607398862",
     "examples/review.claude.md",
     "examples/env-config.claude.md",
