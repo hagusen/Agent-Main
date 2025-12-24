@@ -1,0 +1,22 @@
+{
+  "types": {
+    "model": "text",
+    "print": "checkbox",
+    "silent": "checkbox",
+    "env": "text",
+    "$1": "text",
+    "_subcommand": "text",
+    "_feature_name": "text",
+    "_target_dir": "text",
+    "_mode": "text",
+    "_include_tests": "checkbox",
+    "full-auto": "checkbox",
+    "temperature": "number",
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "--_dry-run": "checkbox",
+    "dangerously-skip-permissions": "checkbox",
+    "_interactive": "checkbox"
+  }
+}
